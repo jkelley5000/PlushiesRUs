@@ -1,0 +1,101 @@
+id,product_name,description,rare,price
+1,"Lechwe, kafue flats",Proin at turpis a pede posuere nonummy. Integer non velit.,true,$16.66
+2,"Teal, hottentot","Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem.",false,$12.60
+3,"Dik, kirk's dik",Mauris ullamcorper purus sit amet nulla.,true,$18.84
+4,Blue-faced booby,"In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem. Duis aliquam convallis nunc.",true,$11.62
+5,"Whale, long-finned pilot",Duis at velit eu est congue elementum. In hac habitasse platea dictumst.,false,$14.08
+6,"Bulbul, black-fronted",Fusce consequat.,false,$19.13
+7,Numbat,"Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus.",false,$16.34
+8,"Lion, galapagos sea",In eleifend quam a odio.,false,$12.86
+9,"Vulture, black",Vestibulum sed magna at nunc commodo placerat. Praesent blandit.,false,$17.10
+10,Black-collared barbet,Aenean lectus.,false,$13.02
+11,"Elk, Wapiti",Maecenas pulvinar lobortis est.,false,$16.62
+12,Hawk-headed parrot,Pellentesque ultrices mattis odio. Donec vitae nisi.,true,$15.84
+13,Black-crowned night heron,Integer a nibh.,false,$17.26
+14,"Elk, Wapiti",Quisque ut erat. Curabitur gravida nisi at nibh.,false,$14.38
+15,Carpet snake,"Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien.",false,$10.97
+16,"Duck, mountain",Morbi non lectus.,false,$14.17
+17,"Eagle, bateleur","Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo. Maecenas pulvinar lobortis est.",true,$12.78
+18,"Lourie, grey","Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus.",false,$10.16
+19,"Boa, malagasy ground",Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis faucibus accumsan odio. Curabitur convallis.,true,$11.86
+20,Seven-banded armadillo,Pellentesque viverra pede ac diam.,false,$13.45
+21,Black-tailed prairie dog,"Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh.",false,$12.21
+22,"Dragon, netted rock",Pellentesque at nulla.,false,$14.86
+23,"Jackal, silver-backed","Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus. Suspendisse potenti.",true,$12.45
+24,Crowned hawk-eagle,Nulla suscipit ligula in lacus. Curabitur at ipsum ac tellus semper interdum.,true,$11.86
+25,"Buffalo, wild water",Nulla nisl.,false,$16.73
+26,"Dragon, netted rock","Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus.",true,$10.18
+27,Indian tree pie,In hac habitasse platea dictumst.,true,$18.24
+28,Meerkat,In quis justo.,true,$12.74
+29,Snake (unidentified),Ut tellus.,true,$11.31
+30,Numbat,Pellentesque ultrices mattis odio. Donec vitae nisi.,true,$18.90
+31,Madagascar hawk owl,Ut tellus.,true,$18.23
+32,"Nighthawk, common","Morbi ut odio. Cras mi pede, malesuada in, imperdiet et, commodo vulputate, justo.",false,$16.55
+33,Brown and yellow marshbird,"In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem.",false,$14.75
+34,"Heron, striated","Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis. Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci.",true,$14.52
+35,"Heron, green-backed",Vivamus vel nulla eget eros elementum pellentesque. Quisque porta volutpat erat.,true,$11.42
+36,"Buffalo, wild water","Donec vitae nisi. Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla.",false,$11.41
+37,Radiated tortoise,Donec dapibus.,false,$18.52
+38,"Owl, burrowing",Donec posuere metus vitae ipsum. Aliquam non mauris.,false,$14.55
+39,Black-crowned night heron,Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam.,true,$11.30
+40,African darter,Quisque ut erat.,false,$12.41
+41,"Caracara, yellow-headed",Morbi non lectus.,true,$17.39
+42,Red-tailed phascogale,Aenean sit amet justo. Morbi ut odio.,false,$17.26
+43,Arctic lemming,Donec posuere metus vitae ipsum. Aliquam non mauris.,false,$18.54
+44,"Capuchin, black-capped","Mauris ullamcorper purus sit amet nulla. Quisque arcu libero, rutrum ac, lobortis vel, dapibus at, diam.",false,$14.31
+45,"Lemming, collared","Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci.",true,$16.61
+46,"Rhea, gray",Etiam vel augue.,false,$11.19
+47,Kaffir cat,"Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi.",false,$13.01
+48,"Lemur, grey mouse",In congue. Etiam justo.,false,$12.39
+49,Swallow-tail gull,Suspendisse potenti.,false,$12.43
+50,Black-throated cardinal,"In hac habitasse platea dictumst. Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem.",false,$11.35
+51,Nubian bee-eater,Cras non velit nec nisi vulputate nonummy.,true,$17.41
+52,Western pygmy possum,Proin interdum mauris non ligula pellentesque ultrices. Phasellus id sapien in sapien iaculis congue.,false,$15.90
+53,"Bird, magnificent frigate",Nulla tempus.,true,$18.77
+54,Pallas's fish eagle,Maecenas tincidunt lacus at velit.,true,$17.78
+55,Blue waxbill,Morbi porttitor lorem id ligula.,true,$12.63
+56,Southern black-backed gull,Maecenas ut massa quis augue luctus tincidunt. Nulla mollis molestie lorem.,false,$17.93
+57,"Kangaroo, eastern grey",Duis aliquam convallis nunc. Proin at turpis a pede posuere nonummy.,false,$12.04
+58,"Eland, common",Curabitur convallis.,true,$12.67
+59,Wattled crane,Donec semper sapien a libero. Nam dui.,false,$11.88
+60,Eastern fox squirrel,"Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus.",true,$14.13
+61,"Lizard, goanna",Phasellus in felis.,false,$14.19
+62,"Iguana, common green","Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",true,$18.75
+63,Egyptian cobra,Pellentesque viverra pede ac diam. Cras pellentesque volutpat dui.,true,$10.96
+64,"Heron, grey",Praesent blandit.,true,$16.98
+65,"Turaco, violet-crested",Nulla tempus. Vivamus in felis eu sapien cursus vestibulum.,false,$12.84
+66,Brush-tailed rat kangaroo,Vivamus tortor.,false,$19.37
+67,Levaillant's barbet,Cras non velit nec nisi vulputate nonummy.,true,$11.54
+68,Red phalarope,Integer non velit.,true,$18.93
+69,Great cormorant,Ut tellus. Nulla ut erat id mauris vulputate elementum.,false,$14.45
+70,"Cardinal, black-throated",Aenean fermentum. Donec ut mauris eget massa tempor convallis.,true,$14.44
+71,Chuckwalla,Maecenas tincidunt lacus at velit.,true,$15.46
+72,"Tern, white-winged black","Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis.",false,$13.52
+73,Crested bunting,Curabitur gravida nisi at nibh.,false,$12.34
+74,"Lion, southern sea",Proin risus.,false,$16.08
+75,"Dog, bush","Vestibulum quam sapien, varius ut, blandit non, interdum in, ante. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis faucibus accumsan odio.",true,$19.80
+76,"Racer, american","In hac habitasse platea dictumst. Morbi vestibulum, velit id pretium iaculis, diam erat fermentum justo, nec condimentum neque sapien placerat ante.",true,$12.70
+77,"Parrot, hawk-headed",Nullam sit amet turpis elementum ligula vehicula consequat. Morbi a ipsum.,false,$10.36
+78,"Peacock, indian","Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",false,$11.92
+79,Roan antelope,Nulla justo.,false,$12.72
+80,"Legaan, water",Etiam vel augue.,false,$17.07
+81,"Stork, painted",Nullam porttitor lacus at turpis.,false,$14.63
+82,"Eagle, african fish",Aenean fermentum. Donec ut mauris eget massa tempor convallis.,false,$11.00
+83,Red hartebeest,Proin eu mi. Nulla ac enim.,false,$15.66
+84,Stick insect,Nunc rhoncus dui vel sem.,false,$12.64
+85,"Duck, comb",Nulla nisl. Nunc nisl.,true,$10.80
+86,"Tortoise, asian foreset","Donec vitae nisi. Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla.",false,$16.71
+87,Sociable weaver,"Suspendisse ornare consequat lectus. In est risus, auctor sed, tristique in, tempus sit amet, sem.",true,$11.33
+88,White-rumped vulture,Integer ac neque.,false,$17.21
+89,Sea birds (unidentified),Morbi ut odio.,false,$19.24
+90,"Goose, canada","Cras in purus eu magna vulputate luctus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",false,$13.76
+91,Giant heron,"Donec vitae nisi. Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla.",false,$10.59
+92,"Ibis, glossy","Nam dui. Proin leo odio, porttitor id, consequat in, consequat ut, nulla.",false,$10.96
+93,"Owl, australian masked",Integer a nibh. In quis justo.,false,$19.66
+94,Giant anteater,Morbi non quam nec dui luctus rutrum. Nulla tellus.,true,$14.54
+95,Little brown dove,Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis faucibus accumsan odio. Curabitur convallis.,false,$14.43
+96,Mocking cliffchat,Donec ut dolor.,true,$12.84
+97,Tyrant flycatcher,Fusce consequat. Nulla nisl.,true,$12.35
+98,Cape white-eye,Nullam sit amet turpis elementum ligula vehicula consequat.,true,$16.61
+99,Dingo,In hac habitasse platea dictumst. Etiam faucibus cursus urna.,true,$13.42
+100,Common wallaroo,Integer a nibh.,true,$17.07
