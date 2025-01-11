@@ -29,7 +29,51 @@ public class PlushiesRUsDB
             return customers;
         }
 
-        
+    }
+
+    public static List<Product> GetProducts(string connectionString)
+    {
+        using (var context = new PlushiesRUsDbOperationsContext(
+            new DbContextOptionsBuilder<PlushiesRUsDbOperationsContext>()
+                .UseSqlServer(connectionString)
+                .Options))
+
+        {
+            var products = context.Products.ToList();
+
+            return products;
+        }
+
+    }
+
+    public static List<ProductPackage> GetProductPackages(string connectionString)
+    {
+        using (var context = new PlushiesRUsDbOperationsContext(
+            new DbContextOptionsBuilder<PlushiesRUsDbOperationsContext>()
+                .UseSqlServer(connectionString)
+                .Options))
+
+        {
+            var productPackages = context.Product_Packages.ToList();
+
+            return productPackages;
+        }
+
+    }
+
+    public static List<Purchase> GetPurchases(string connectionString)
+    {
+        using (var context = new PlushiesRUsDbOperationsContext(
+            new DbContextOptionsBuilder<PlushiesRUsDbOperationsContext>()
+                .UseSqlServer(connectionString)
+                .Options))
+
+        {
+            var purchases = context.Purchases.ToList();
+
+            return purchases;
+        }
+
     }
 
 }

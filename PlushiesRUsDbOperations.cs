@@ -12,5 +12,8 @@ public class PlushiesRUsDbOperationsContext : DbContext
     }
 
     public DbSet<Customer> Customers { get; set; }
+    public DbSet<Product> Products { get; set; }
+    public DbSet<ProductPackage> Product_Packages { get; set; }
+    public DbSet<Purchase> Purchases { get; set; }
 
 }

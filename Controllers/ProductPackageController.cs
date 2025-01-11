@@ -10,21 +10,21 @@ namespace PlushiesRUs.Controllers;
 
 [ApiController]
 [Route("[controller]")]
-public class PackageController : ControllerBase
+public class ProductPackageController : ControllerBase
 {
-    private readonly ILogger<PackageController> _logger;
+    private readonly ILogger<ProductPackageController> _logger;
     private readonly PlushiesRUsDbOperationsContext _dbContext;
 
-    public PackageController(ILogger<PackageController> logger, PlushiesRUsDbOperationsContext dbContext)
+    public ProductPackageController(ILogger<ProductPackageController> logger, PlushiesRUsDbOperationsContext dbContext)
     {
         _logger = logger;
         _dbContext = dbContext;
     }
 
-    [HttpGet(Name = "GetPackages")]
-    public IEnumerable<Package> Get()
+    [HttpGet(Name = "GetProductPackages")]
+    public IEnumerable<ProductPackage> Get()
     {
-        var packages = _dbContext.Packages.ToList();
-        return packages;
+        var productPackages = _dbContext.Product_Packages.ToList();
+        return productPackages;
     }
 }

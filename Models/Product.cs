@@ -2,13 +2,13 @@ namespace PlushiesRUs.Models;
 
 public class Product
 {
-    public short Id { get; set; }
+    public byte Id { get; set; }
 
-    public string ProductName { get; set; }
+    public string Product_Name { get; set; }
 
     public string Description { get; set; }
 
     public bool Rare { get; set; }
 
-    public string Price { get; set; }
+    public decimal Price { get; set; }
 }

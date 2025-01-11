@@ -25,6 +25,6 @@ public class ProductController : ControllerBase
     public IEnumerable<Product> Get()
     {
         var products = _dbContext.Products.ToList();
-        return customers;
+        return products;
     }
 }
