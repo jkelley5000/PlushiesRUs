@@ -5,26 +5,40 @@ using System.Collections.Generic;
 using System.Linq;
 using Microsoft.EntityFrameworkCore;
 using PlushiesRUs.DB;
+using PlushiesRUs.Services;
 
 namespace PlushiesRUs.Controllers;
 
 [ApiController]
-[Route("[controller]")]
+[Route("purchases")]
 public class PurchaseController : ControllerBase
 {
     private readonly ILogger<PurchaseController> _logger;
     private readonly PlushiesRUsDbOperationsContext _dbContext;
+    private readonly PurchaseService _purchaseService;
 
-    public PurchaseController(ILogger<PurchaseController> logger, PlushiesRUsDbOperationsContext dbContext)
+    public PurchaseController(
+        ILogger<PurchaseController> logger, 
+        PlushiesRUsDbOperationsContext dbContext, 
+        PurchaseService purchaseService
+    )
     {
         _logger = logger;
         _dbContext = dbContext;
+        _purchaseService = purchaseService;
     }
 
-    [HttpGet(Name = "GetPurchases")]
-    public IEnumerable<Purchase> Get()
+    [HttpGet("all")]
+    public IActionResult GetAllPurchases()
     {
-        var purchases = _dbContext.Purchases.ToList();
-        return purchases;
+        var purchases = _purchaseService.GetAllPurchases();
+        return Ok(purchases);
+    }
+
+    [HttpGet("loyal-customers")]
+    public IActionResult GetLoyalCustomers()
+    {
+        var loyalCustomers = _purchaseService.GetLoyalCustomers();
+        return Ok(loyalCustomers);
     }
 }

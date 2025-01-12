@@ -1,6 +1,7 @@
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.EntityFrameworkCore;
+using PlushiesRUs.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -8,6 +9,7 @@ builder.Services.AddDbContext<PlushiesRUsDbOperationsContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("MyConnection")));
 
 builder.Services.AddControllers();
+builder.Services.AddScoped<PurchaseService>();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
