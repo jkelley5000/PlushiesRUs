@@ -10,6 +10,9 @@ builder.Services.AddDbContext<PlushiesRUsDbOperationsContext>(options =>
 
 builder.Services.AddControllers();
 builder.Services.AddScoped<PurchaseService>();
+builder.Services.AddScoped<ProductPackageService>();
+builder.Services.AddScoped<ProductService>();
+builder.Services.AddScoped<CustomerService>();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 

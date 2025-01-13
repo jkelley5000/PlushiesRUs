@@ -5,26 +5,33 @@ using System.Collections.Generic;
 using System.Linq;
 using Microsoft.EntityFrameworkCore;
 using PlushiesRUs.DB;
+using PlushiesRUs.Services;
 
 namespace PlushiesRUs.Controllers;
 
 [ApiController]
-[Route("[controller]")]
+[Route("customers")]
 public class CustomerController : ControllerBase
 {
     private readonly ILogger<CustomerController> _logger;
     private readonly PlushiesRUsDbOperationsContext _dbContext;
+    private readonly CustomerService _customerService;
 
-    public CustomerController(ILogger<CustomerController> logger, PlushiesRUsDbOperationsContext dbContext)
+    public CustomerController(
+        ILogger<CustomerController> logger, 
+        PlushiesRUsDbOperationsContext dbContext,
+        CustomerService customerService
+    )
     {
         _logger = logger;
         _dbContext = dbContext;
+        _customerService = customerService;
     }
 
-    [HttpGet(Name = "GetCustomers")]
-    public IEnumerable<Customer> Get()
+    [HttpGet("all")]
+    public IActionResult GetAllCustomers()
     {
-        var customers = _dbContext.Customers.ToList();
-        return customers;
+        var customers = _customerService.GetAllCustomers();
+        return Ok(customers);
     }
 }

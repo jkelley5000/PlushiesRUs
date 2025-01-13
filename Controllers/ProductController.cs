@@ -5,26 +5,33 @@ using System.Collections.Generic;
 using System.Linq;
 using Microsoft.EntityFrameworkCore;
 using PlushiesRUs.DB;
+using PlushiesRUs.Services;
 
 namespace PlushiesRUs.Controllers;
 
 [ApiController]
-[Route("[controller]")]
+[Route("products")]
 public class ProductController : ControllerBase
 {
     private readonly ILogger<ProductController> _logger;
     private readonly PlushiesRUsDbOperationsContext _dbContext;
+    private readonly ProductService _productService;
 
-    public ProductController(ILogger<ProductController> logger, PlushiesRUsDbOperationsContext dbContext)
+    public ProductController(
+        ILogger<ProductController> logger, 
+        PlushiesRUsDbOperationsContext dbContext,
+        ProductService productService
+    )
     {
         _logger = logger;
         _dbContext = dbContext;
+        _productService = productService;
     }
 
-    [HttpGet(Name = "GetProducts")]
-    public IEnumerable<Product> Get()
+    [HttpGet("all")]
+    public IActionResult GetAllProducts()
     {
-        var products = _dbContext.Products.ToList();
-        return products;
+        var products = _productService.GetAllProducts();
+        return Ok(products);
     }
 }
