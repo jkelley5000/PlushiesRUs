@@ -17,9 +17,7 @@ public class ProductService
 
     public List<Product> GetAllProducts()
     {
-        var products = new List<Product>();
-        products = _dbContext.Products.ToList();
-        return products;
+        return _dbContext.Products;
     }
 
 }

@@ -28,7 +28,7 @@ public class ProductController : ControllerBase
         _productService = productService;
     }
 
-    [HttpGet("all")]
+    [HttpGet()]
     public IActionResult GetAllProducts()
     {
         var products = _productService.GetAllProducts();

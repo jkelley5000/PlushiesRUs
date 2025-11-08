@@ -41,3 +41,9 @@ bld/
 msbuild.log
 msbuild.err
 msbuild.wrn
+obj/*
+bin/*
+**nuget**
+*.cache
+*.dgspec.json
+*.log

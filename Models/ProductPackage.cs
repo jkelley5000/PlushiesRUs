@@ -2,11 +2,11 @@ namespace PlushiesRUs.Models;
 
 public class ProductPackage
 {
-    public byte Id { get; set; }
+    public byte id { get; set; }
 
-    public string Package_Name { get; set; }
+    public string package_name { get; set; }
 
-    public string Products { get; set; }
+    public string products { get; set; }
 
-    public decimal Price { get; set; }
+    public string price { get; set; }
 }

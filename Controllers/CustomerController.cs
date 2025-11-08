@@ -28,7 +28,7 @@ public class CustomerController : ControllerBase
         _customerService = customerService;
     }
 
-    [HttpGet("all")]
+    [HttpGet()]
     public IActionResult GetAllCustomers()
     {
         var customers = _customerService.GetAllCustomers();

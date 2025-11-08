@@ -1,3 +1,4 @@
+using System.IO;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.EntityFrameworkCore;
@@ -5,8 +6,19 @@ using PlushiesRUs.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
-builder.Services.AddDbContext<PlushiesRUsDbOperationsContext>(options =>
-    options.UseSqlServer(builder.Configuration.GetConnectionString("MyConnection")));
+var customerTable = builder.Configuration.GetValue<string>("Tables:CustomerTable");
+var productTable = builder.Configuration.GetValue<string>("Tables:ProductTable");
+var productPackageTable = builder.Configuration.GetValue<string>("Tables:ProductPackageTable");
+var purchaseTable = builder.Configuration.GetValue<string>("Tables:PurchaseTable");
+
+builder.Services.AddSingleton(new PlushiesRUs.DB.PlushiesRUsDB(
+    customerTable,
+    productTable,
+    productPackageTable,
+    purchaseTable
+));
+
+builder.Services.AddScoped<PlushiesRUs.DB.PlushiesRUsDbOperationsContext>();
 
 builder.Services.AddControllers();
 builder.Services.AddScoped<PurchaseService>();

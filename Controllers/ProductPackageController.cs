@@ -28,7 +28,7 @@ public class ProductPackageController : ControllerBase
         _productPackageService = productPackageService;
     }
 
-    [HttpGet("all")]
+    [HttpGet()]
     public IActionResult GetAllProductPackages()
     {
         var productPackages = _productPackageService.GetAllProductPackages();

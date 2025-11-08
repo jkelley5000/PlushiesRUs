@@ -2,11 +2,11 @@ namespace PlushiesRUs.Models;
 
 public class Customer
 {
-    public short Id { get; set; }
+    public short id { get; set; }
 
-    public string Full_Name { get; set; }
+    public string full_name { get; set; }
 
-    public string Email { get; set; }
+    public string email { get; set; }
 
-    public DateTime First_Purchase_Date { get; set; }
+    public DateTime? first_purchase_date { get; set; }
 }

@@ -17,9 +17,7 @@ public class CustomerService
 
     public List<Customer> GetAllCustomers()
     {
-        var customers = new List<Customer>();
-        customers = _dbContext.Customers.ToList();
-        return customers;
+        return _dbContext.Customers;
     }
 
 }

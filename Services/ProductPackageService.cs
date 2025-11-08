@@ -17,9 +17,7 @@ public class ProductPackageService
 
     public List<ProductPackage> GetAllProductPackages()
     {
-        var productPackages = new List<ProductPackage>();
-        productPackages = _dbContext.Product_Packages.ToList();
-        return productPackages;
+        return _dbContext.ProductPackages;
     }
 
 }

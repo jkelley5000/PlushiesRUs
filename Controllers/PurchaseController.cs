@@ -28,17 +28,11 @@ public class PurchaseController : ControllerBase
         _purchaseService = purchaseService;
     }
 
-    [HttpGet("all")]
+    [HttpGet()]
     public IActionResult GetAllPurchases()
     {
         var purchases = _purchaseService.GetAllPurchases();
         return Ok(purchases);
     }
 
-    [HttpGet("loyal-customers")]
-    public IActionResult GetLoyalCustomers()
-    {
-        var loyalCustomers = _purchaseService.GetLoyalCustomers();
-        return Ok(loyalCustomers);
-    }
 }
